@@ -2,6 +2,8 @@
 
 **A skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Codex](https://github.com/openai/codex) that performs careful, structured code review of changes against main.**
 
+Based on the [review prompt](https://github.com/lucasb-eyer/dotfiles/blob/master/_codex/prompts/lbreview.md) by [@lucasb-eyer](https://github.com/lucasb-eyer), extended with adversarial reviewer lenses and a structured verdict system.
+
 lbreview reads your diff, understands the author's intent, then systematically evaluates benefits, pitfalls, gaps, and simplification opportunities. For larger changes, it deploys adversarial reviewer lenses -- Skeptic, Architect, Minimalist -- that stress-test correctness, structural fitness, and necessity before delivering a verdict.
 
 Invoke with `/lbreview` or ask your agent to "review my changes."
